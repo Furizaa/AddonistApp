@@ -56,7 +56,7 @@ DEALINGS IN THE SOFTWARE.
     CefInitialize(appSettings, cefApplication);
     
     std::string path = [[[NSBundle mainBundle] resourcePath] cStringUsingEncoding:NSUTF8StringEncoding];
-    path = "file://" + path + "/html/index.html";
+    path = "http://localhost:9001/";
     
     CefBrowser::CreateBrowser(info, client, path, browserSettings);
     

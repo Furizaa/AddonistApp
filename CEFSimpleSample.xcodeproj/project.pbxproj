@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1DAA71FF5083217D864A4CC /* WowGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DAAAD95564A4269FF79434 /* WowGame.cpp */; };
+		E1DAAFD2FF34DD49BF3FEC3D /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DAAEE7817402D3E7C6D07D /* Game.cpp */; };
 		E78D966C1638A18900DE580E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78D966B1638A18900DE580E /* Cocoa.framework */; };
 		E78D969D1638B9F300DE580E /* ClientHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E78D969B1638B9F300DE580E /* ClientHandler.cpp */; };
 		E78D96A41638BA0B00DE580E /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E78D969F1638BA0B00DE580E /* AppDelegate.mm */; };
@@ -84,6 +86,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E1DAA88B4A13D8E1AFF684D5 /* WowGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WowGame.h; sourceTree = "<group>"; };
+		E1DAAAD95564A4269FF79434 /* WowGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WowGame.cpp; sourceTree = "<group>"; };
+		E1DAAEE7817402D3E7C6D07D /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Game.cpp; path = Independent/Game.cpp; sourceTree = "<group>"; };
+		E1DAAFE3549881D7824C2CD6 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = Independent/Game.h; sourceTree = "<group>"; };
 		E78D96671638A18900DE580E /* CEFSimpleSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CEFSimpleSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78D966B1638A18900DE580E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E78D966E1638A18900DE580E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -267,6 +273,10 @@
 				E78D969B1638B9F300DE580E /* ClientHandler.cpp */,
 				E78D969C1638B9F300DE580E /* ClientHandler.h */,
 				E78D96721638A18900DE580E /* Supporting Files */,
+				E1DAAEE7817402D3E7C6D07D /* Game.cpp */,
+				E1DAAFE3549881D7824C2CD6 /* Game.h */,
+				E1DAAAD95564A4269FF79434 /* WowGame.cpp */,
+				E1DAA88B4A13D8E1AFF684D5 /* WowGame.h */,
 			);
 			path = CEFSimpleSample;
 			sourceTree = "<group>";
@@ -524,6 +534,8 @@
 				E78D969D1638B9F300DE580E /* ClientHandler.cpp in Sources */,
 				E78D96A41638BA0B00DE580E /* AppDelegate.mm in Sources */,
 				E78D96A61638BA0B00DE580E /* main.mm in Sources */,
+				E1DAAFD2FF34DD49BF3FEC3D /* Game.cpp in Sources */,
+				E1DAA71FF5083217D864A4CC /* WowGame.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,7 +636,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_WARN_EMPTY_BODY = YES;
